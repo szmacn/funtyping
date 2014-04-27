@@ -11,4 +11,8 @@ record daily life
     vi README.md
     git commit -m "modify README.md"
     git push origin
-    this is a test
+    修改文件后:
+        git commit README.md -m "modify README.md"
+        git push origin
+        文件同步到github网站
+
