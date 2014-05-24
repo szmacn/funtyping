@@ -1,0 +1,62 @@
+不能循环引用；
+引用的规则是，包级引用（__init__.py中的定义是可以互相引用的），不能是文件.py之间的互相引用，否则会报错。
+views是控制器，只有它引用别人。
+函数引用如果形成“环”，就会出现循环引用，会报错。
+
+channel
+    irobot dem
+    channel
+    网络通讯的原理及模型
+    通讯协议常见的如http
+    Protobuf的使用、简单实现、应用场景
+    如何基于pb实现一套rpc网络中间件
+    结论Rpc在公司内部如何使用
+
+    RPC特点
+        灵活（自定义）
+        统一协议
+
+2014-05-24
+ipython模块详细描述？如db.session.query?
+centos建立桌面快捷方式？
+Flask-login
+Flaskcache
+数据库优化
+    1、读写分离
+                                    “写”的数据库         timeout后向读的库写数据
+                                        |
+                            --------------------------
+                            |           |           |
+                        读的库1    读的库2      读的库3
+
+    2、分表/分区
+        垂直/水平
+        水平：note-----user_id   %  10  user_id对10取模，根据取模的结果将用户的note信息存储到不同的服务器上的note表中
+        垂直：user表在user服务器上，note表在note服务器上。
+
+    3、cache
+
+Message Queue
+
+数据流
+    有序
+    源源不断
+    N多的分片 就是N多的message
+    查询关键字：python 发送http请求
+
+    前端 Ext jquery bootstrape saber -->App
+    后端 openstack(云) 虚拟化---->memcached
+                                  redis
+                                  mango
+    代码设计原则
+        http://www.uml.org.cn/sjms/201211023.asp
+        1、单一职责
+        2、面向接口编程
+        3、迪米特
+        4、开闭原则
+
+    西二旗小王子
+    西二旗民工
+
+kingsley.song@gmail.com
+
